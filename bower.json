@@ -1,8 +1,8 @@
 {
-    "name":"Portfolio",
-    "description":"This is a portfolio project for Coding Campus:",
-    "dependencies":{
-        "bootstrap":"latest",
-        "font-awesome":"latest"
+    "name": "Portfolio",
+    "description": "This is a portfolio project for Coding Campus:",
+    "dependencies": {
+        "bootstrap": "latest",
+        "font-awesome": "latest"
     }
 }
