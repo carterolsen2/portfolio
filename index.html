@@ -12,9 +12,11 @@ that's the only area that is pretty empty-->
 <head>
     <title>Portfolio</title>
     <link rel="stylesheet" href="lib/bootstrap-3.1.1-dist/css/bootstrap.css"/>
-    <script src="lib/bootstrap-3.1.1-dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap-3.1.1-dist/js/bootstrap.js"></script>
 </head>
 <body>
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -179,15 +181,17 @@ that's the only area that is pretty empty-->
         and programmin so get rekt throw in some photos go crazy--> </p>
 
     <!--This is the code for the photos found under the "Skills" area on my portfolio-->
-    <div id="myCarousel" class="carousel slide">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
         <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
         </ol>
-        <!-- Carousel items -->
+
+        <!-- Wrapper for slides -->
         <div class="carousel-inner">
-            <div class="active item">
+            <div class="item active">
                 <ul>
                     <img src="img/c-icon.jpg" style="width: 40px; height: 40px;">
                     <img src="img/c++-icon.jpg" style="width: 40px; height: 40px;">
@@ -195,13 +199,18 @@ that's the only area that is pretty empty-->
                     <img src="img/HTML-icon.jpg" style="width: 40px; height: 40px;">
                     <img src="img/Git-icon.jpg" style="width: 40px; height: 40px;">
                 </ul>
+                <div class="carousel-caption">
+                    Coding competencies.
+                </div>
             </div>
-
             <div class="item">
                 <ul>
                     <img src="img/PS-icon.jpg" style="width: 55px; height: 55px;">
                     <img src="img/Gimp-icon.jpg" style="width: 40px; height: 40px;">
                 </ul>
+                <div class="carousel-caption">
+                    Photo manipulation.
+                </div>
             </div>
             <div class="item">
                 <ul>
@@ -209,14 +218,19 @@ that's the only area that is pretty empty-->
                     <img src="img/Camtasia-Icon.jpg" style="width: 45px; height: 45px;">
                     <img src="img/Audacity-Logo.jpg" style="width: 45px; height: 45px;">
                 </ul>
+                <div class="carousel-caption">
+                    Video editing.
+                </div>
             </div>
         </div>
-        <!-- Carousel nav -->
-        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div>
-    <div class="row">
 
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
     </div>
 </div>
 <!--This is the code for the photos found under the "Skills" area on my portfolio-->
